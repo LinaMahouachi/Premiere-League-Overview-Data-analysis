@@ -80,7 +80,7 @@ All numbers below come from the 760 team-matches in this repository (20 teams x 
 | Size | 760 rows: 20 teams x 38 matches (each real match appears twice, once from each team's side) |
 | Collected with | Python `requests`, using the endpoint `https://understat.com/getLeagueData/EPL/2025` with the `X-Requested-With: XMLHttpRequest` header |
  
-Understat has no official public API, so this endpoint could change in future. All data belongs to Understat. Please read their terms of use before reusing or redistributing it.
+Understat has no official public API, so this endpoint could change in future. All data belongs to Understat. 
  
 A full column-by-column description of every file is in **[documentation/data_dictionary.md](documentation/data_dictionary.md)**.
  
@@ -133,7 +133,7 @@ A full column-by-column description of every file is in **[documentation/data_di
 Three tidy CSVs (`matches.csv`, `season_table.csv`, `home_away.csv`) with consistent team names for relationships.
  
 ### 5. Visualize (`PowerBi/pl dashboard.pbix`)
-`season_table` is the "one" side of one-to-many relationships (on `team`) to `matches` and `home_away`. Custom DAX measures (winner, most unlucky team, luck colours and so on) are documented in **[documentation/dax_measures.md](documentation/dax_measures.md)**.
+`season_table` is the "one" side of one-to-many relationships (on `team`) to `matches` and `home_away`. Custom DAX measures (winner, most unlucky team, luck colours and so on) are documented in **[documentation/Dax_measures.md](documentation/dax_measures.md)**.
  
 `notebooks/analysis.ipynb` contains the first Plotly prototypes of the charts that were later rebuilt in Power BI.
  
@@ -196,7 +196,7 @@ PL tracker/
  
 ## How to run
  
-**Requirements:** Python 3.10+ and (to open the dashboard) Power BI Desktop on Windows.
+**Requirements:** Python 3.10+ and Power BI Desktop on Windows.
  
 ```bash
 # 1. Clone the repository
